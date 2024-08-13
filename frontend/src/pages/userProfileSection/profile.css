@@ -1,0 +1,34 @@
+.profileBG{
+ background-color: rgb(242, 241, 241) !important;
+}
+.colBG{
+ background-color: white !important;
+}
+
+.iconColor{
+    color: orange !important;
+}
+
+.cardBorderLight{
+    border: 1px solid rgb(216, 214, 214) !important;
+}
+
+.profilehover:hover{
+   
+}
+
+
+.shippingOpen{
+    position: fixed !important;
+    top:-8px !important;
+    width: 100vw !important;
+    z-index: 999 !important;
+}
+.shippingOpen1{
+    position: fixed !important;
+    top:-8px !important;
+    width: 100vw !important;
+   
+ 
+}
+

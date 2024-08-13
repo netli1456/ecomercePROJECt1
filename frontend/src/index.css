@@ -1,0 +1,535 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.buttonBorder {
+  color: white !important;
+  width: fit-content !important;
+}
+
+.buttonBorder:hover {
+  background-color: rgb(109, 106, 106) !important;
+}
+
+.buttonBorder1 {
+  color: white !important;
+}
+.buttonBorder1:hover {
+  background-color: rgb(38, 37, 37) !important;
+  border-radius: 50%;
+}
+
+.buttonBorder11 {
+  color: red !important;
+  background-color: rgb(202, 199, 199) !important;
+  border-radius: 50%;
+  padding: 10px !important;
+  color: beige;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.buttonBorder11:hover {
+  opacity: 0.7;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+.homeBackGround {
+  background-color: white !important;
+}
+.borderDropdow {
+  border: 1px solid rgb(185, 182, 182) !important;
+}
+.NavdropLink:hover {
+  background-color: white !important;
+}
+.NavdropLink {
+  padding: 10px !important;
+}
+.dropDownCancel {
+  color: orange !important;
+  cursor: pointer;
+}
+
+.homeBackGrounds {
+  background-color: rgb(245, 243, 243) !important;
+}
+
+.iconColor {
+  color: rgb(240, 166, 30) !important;
+  /* color: rgb(74, 74, 245); */
+}
+.join {
+  background-color: rgb(240, 166, 30) !important;
+  color: white !important;
+}
+.join1 {
+  background-color: rgb(232, 227, 227) !important;
+}
+
+.ca {
+  position: inherit;
+}
+
+.cards-container {
+  /* background-color: rgba(255, 88, 88, 0.479) !important; */
+  background-color: orange !important;
+  color: white !important;
+}
+.cards-containers {
+  color: white !important;
+  border-radius: 20px !important;
+  background-color: red !important;
+}
+.danger {
+  color: red !important;
+  font-family: Helvetica, sans-serif !important;
+}
+
+.weeklyDeal {
+  color: white !important;
+  border-radius: 20px !important;
+  background-color: orangered !important;
+}
+
+.topProduct {
+  opacity: 0.6;
+  font-size: 13px;
+}
+.topProducts {
+  opacity: 0.8;
+
+  font-size: 15px;
+}
+.topProduc {
+  font-weight: bold !important;
+  color: red;
+}
+
+.homeCardBg {
+  padding: 2px !important;
+  background-color: white !important;
+}
+
+.cardDiv {
+  height: 300px !important;
+  width: 130px !important;
+  border: 1px solid red !important;
+}
+
+.similarItems {
+  color: white;
+  opacity: 0;
+  border: 0px 3px 3px 3px solid transparent !important;
+}
+.homeCardBg:hover .similarItems {
+  display: block !important;
+  opacity: 1;
+  border-color: orange !important;
+  background-color: orange !important;
+  transition: border-color 0.3s ease;
+}
+.homeCardBg:hover {
+  border-color: orange !important;
+}
+.homeCardBg {
+  border: 3px solid transparent !important;
+  border-radius: 5px !important;
+}
+
+.non-resizable {
+  resize: none;
+}
+
+.closeIconBody {
+  position: relative;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px;
+  color: orange;
+}
+
+.closeIcon:hover {
+  background-color: grey !important;
+  border-radius: 50px !important;
+}
+.closeIconSpecification {
+  cursor: pointer;
+
+  color: orange;
+}
+
+.closeIconSpecification:hover {
+  border-radius: 50px !important;
+}
+
+.placin {
+  color: yellow !important;
+}
+
+.borderForCheck {
+  border: 1px solid orange !important;
+}
+
+.b {
+  background-color: rgb(213, 207, 207);
+}
+
+.homeCardWidth {
+  min-height: 290px !important;
+  width: 160px !important;
+  max-height: 290px !important;
+}
+
+.bott {
+  background-color: rgb(255, 111, 0) !important;
+  color: white !important;
+  border-radius: 20px !important;
+}
+.bott2 {
+  border-radius: 20px !important;
+  border: 1px solid black !important;
+}
+
+.cartOpacity {
+  background-color: rgba(128, 128, 128, 0.647) !important;
+}
+.cartOpacity2 {
+  background-color: white !important;
+}
+
+.inputsearch1 {
+  width: 80% !important;
+  transition: 0.6s !important;
+}
+.inputsearch2 {
+  width: 50px !important;
+  transition: 0.6s !important;
+}
+
+.shippinOpenHeight {
+  height: 70vh !important;
+  overflow-y: hidden;
+}
+
+.messageBG {
+  background-color: rgba(253, 3, 3, 0.222);
+}
+
+.payBG {
+  background-color: rgba(0, 128, 0, 0.303) !important;
+}
+
+.buttonCol {
+  background-color: orangered !important;
+}
+
+.sectionStyle {
+  background-color: rgb(224, 212, 212) !important;
+  border-bottom: 1px solid rgba(255, 68, 0, 0.799) !important;
+  font-size: 17px !important;
+  font-weight: 600;
+}
+
+.ownsty {
+  width: 100%;
+}
+
+.carouselsty {
+  display: flex !important;
+  overflow: hidden !important;
+  align-items: center;
+}
+.addpayment {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.536);
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1 !important;
+  top: 0;
+  left: 0;
+}
+.addpayment1 {
+  position: relative !important;
+  overflow-y: hidden !important;
+}
+
+.smallp {
+  font-size: 13px !important;
+}
+
+.messageCo {
+  color: rgba(8, 8, 243, 0.555) !important;
+}
+
+.shipinOpac {
+  display: none !important;
+}
+
+.wallet {
+  background-color: rgba(216, 210, 210, 0.799) !important;
+}
+
+.smallPBold {
+  font-size: 13px !important;
+}
+
+.colProf1 {
+  flex: 1;
+}
+
+.colProf1 {
+  flex: 5;
+}
+.carousel-indicators {
+  display: none !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.56) !important;
+  opacity: 0.5 !important;
+}
+
+.greyLight {
+  color: rgb(201, 197, 197) !important;
+}
+
+.categoryButton {
+  position: fixed !important;
+  top: 9 !important;
+  left: -300px !important; /* Start outside of the view */
+  width: 400px !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.609) !important;
+  transition: transform 0.9s ease-in-out !important; /* Use transform for smooth slide effect */
+}
+
+.categoryButton.show {
+  transform: translateX(300px) !important; /* Slide in from the left */
+}
+
+.categor {
+  transition: 0.5s ease-in-out !important;
+}
+
+.bgbor {
+  border-radius: 20px 0px 0px 20px !important;
+}
+.headerBottomLocation {
+  color: orangered !important;
+}
+.headerBottomLocation1 {
+  color: orangered !important;
+  border-bottom: 1px solid red !important;
+  font-weight: bold;
+}
+
+.headerBottomLocation2 {
+  color: inherit !important;
+}
+.serchsmallBg {
+  background-color: rgba(191, 186, 186, 0.347) !important;
+  font-size: 18px !important;
+}
+.footerBg {
+  background-color: rgba(191, 186, 186, 0.347) !important;
+  width: 100vw !important;
+}
+.serchsmallBg1 {
+  border: 1px solid black !important;
+  margin: auto !important;
+  
+  border-radius: 20px 20px 20px 20px !important;
+}
+
+.iconSearchBorder {
+  border-radius: 0px 20px 20px 0px !important;
+}
+
+.greenBg {
+  background-color: rgb(88, 190, 29) !important;
+  padding: 3px;
+  color: white !important;
+  border-radius: 4px;
+}
+.greyBg {
+  background-color: grey !important;
+  padding: 3px;
+  color: white !important;
+  border-radius: 4px;
+}
+.blackBg {
+  background-color: black !important;
+  padding: 3px;
+  color: white !important;
+  border-radius: 4px;
+}
+
+.bodyContainer {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.theMain {
+  flex: 1 !important;
+  min-height: 90vh !important;
+}
+
+.wishListIcon {
+  background-color: rgb(221, 215, 215) !important;
+  border-radius: 50% !important;
+}
+
+.followingButtonBg {
+  background-color: grey !important;
+}
+
+.parentcontainer:hover .moreIcon {
+  display: block !important;
+}
+
+.moreIcon {
+  display: none !important;
+}
+.productDelete {
+  background-color: rgba(255, 255, 255, 0.577) !important;
+}
+
+.delete {
+  background-color: red !important;
+  border-radius: 20px !important;
+  color: white !important;
+}
+.edit {
+  border: 1px solid black !important;
+  border-radius: 20px !important;
+  background-color: white !important;
+}
+.suspend {
+  background-color: orange !important;
+  border-radius: 20px !important;
+  color: white !important;
+}
+
+.comfirmBG {
+  background-color: black !important;
+}
+.storeOverflow {
+  overflow: hidden !important;
+}
+
+.categoryHover:hover {
+  color: rgb(96, 96, 241) !important;
+}
+
+.productUpdateBG {
+  background-color: rgba(0, 0, 0, 0.519) !important;
+}
+
+.updateOpen {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.grid-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+  grid-gap: 16px !important;
+}
+
+.grid-item {
+  min-width: 200px !important;
+}
+
+.bGsmScreenAddToCartCol {
+  background-color: rgba(0, 0, 0, 0.304) !important;
+}
+
+.navButtonActive {
+  background-color: rgba(128, 128, 128, 0.609) !important;
+  border-radius: 40%;
+}
+.navButtonActive1 {
+  border-bottom: 1px solid red !important;
+}
+
+.userSellerUploadOpen {
+  background-color: white !important;
+
+  width: 100vw !important;
+ 
+ 
+}
+
+.userSellerUploadOpen1 {
+  background-color: white !important;
+
+  width: 100vw !important;
+}
+
+.headerselleropen {
+  width: 100vw !important;
+  position: relative !important;
+
+  overflow: hidden !important;
+}
+
+.headerselleropen3 {
+  z-index: 9 !important;
+}
+.headerselleropen1 {
+  width: 100vw !important;
+  position: relative !important;
+  z-index: 9 !important;
+  overflow: hidden !important;
+}
+
+.smallNavBG {
+  background-color: white !important;
+  border-radius: 10px !important;
+}
+
+.mobileStyle {
+  /* background-color: rgb(98, 98, 237) !important; */
+  background-color: orange !important;
+  color: white !important;
+}
+.mobileStyle1 {
+  background-color: rgb(98, 98, 237) !important;
+  /* background-color: orange!important; */
+  color: white !important;
+}
+
+@media (min-width: 768px) {
+  /* Add your styles here for medium-sized screens */
+}
+
+/* Styles for small-sized screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .homeCardWidt {
+    width: 47% !important;
+  }
+  .homeCardBg:hover .similarItems {
+    opacity: 0;
+  }
+  .homeCardBg:hover {
+    border-color: white !important;
+  }
+}

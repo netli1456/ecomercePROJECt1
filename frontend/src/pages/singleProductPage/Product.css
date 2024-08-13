@@ -1,0 +1,113 @@
+.singleProductHeader1 {
+  width: 100%;
+  height: 65px;
+  background-color: black !important;
+  display: flex;
+  align-items: center !important;
+}
+
+.bgNavSize {
+  width: 95%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  margin: auto;
+  color: white;
+}
+
+.imageStyle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.buttonBg {
+  background-color: white;
+  color: black;
+}
+
+.singleProductHeader2 {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(236, 233, 233) !important;
+  display: flex;
+  align-items: center !important;
+  color: black !important;
+}
+
+.bgNavSize1 {
+  width: 95%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  margin: auto;
+}
+
+.bgNavSize2 {
+  width: 95%;
+  margin: auto !important;
+  margin-top: 20px !important;
+}
+
+.imgSmallHover:hover {
+  border: 2px solid black !important;
+}
+.imgSmallHover {
+  border: 2px solid transparent !important;
+}
+
+
+.buttonBg2{
+    background-color: rgb(235, 233, 233) !important;
+}
+
+.butonBgRed{
+    border-radius: 30px !important;
+}
+
+.buttonvariant{
+    background-color: rgb(244, 221, 221) !important;
+    color:red !important;
+}
+
+.greyBorder{
+  border-top:1px solid rgb(227, 225, 225) !important;
+}
+.greyBorder{
+  border-top:1px solid rgb(242, 239, 239) !important;
+}
+
+
+/* Hide the scrollbar but allow scrolling */
+.scrollbars::-webkit-scrollbar {
+  width: 8px !important; /* Adjust the width as needed */
+}
+
+.scrollbars::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+.scrollbars::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
+
+/* Hide the scrollbar thumb when hovering */
+.scrollbars::-webkit-scrollbar-thumb:hover {
+  background-color: transparent !important;
+}
+
+/* Hide the scrollbar track when hovering */
+.scrollbars::-webkit-scrollbar-track:hover {
+  background-color: transparent !important;
+}
+
+.scrollbars {
+  scrollbar-width: thin !important; /* Firefox */
+  scrollbar-color: transparent !important; /* Firefox */
+  scrollbar-track-color: transparent !important; /* Webkit (Chrome, Safari) */
+  position: static !important;
+  overflow-y: scroll !important;
+}

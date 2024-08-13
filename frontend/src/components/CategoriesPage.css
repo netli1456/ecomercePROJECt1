@@ -1,0 +1,36 @@
+.categories-container {
+    position: relative;
+    width: 200px;
+  }
+  
+  .categories-toggle-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .categories-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .categories-list.show {
+    max-height: 200px; /* Adjust the value based on your content */
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style the list items as needed */
+  
