@@ -70,7 +70,7 @@ function ProductHeader(props) {
       document.body.style.height = '100vh';
       document.body.style.overflow = '100vh';
     }
-  });
+  },[open]);
 
   return (
     <div>
@@ -86,10 +86,7 @@ function ProductHeader(props) {
             <NaviBar />
           </div>
         )}
-        <div
-          className="d-none d-md-flex"
-          style={{ marginBottom: 'px' }}
-        ></div>
+        <div className="d-none d-md-flex" style={{ marginBottom: 'px' }}></div>
       </div>
 
       <div
@@ -140,7 +137,9 @@ function ProductHeader(props) {
                 className="text-capitalize p-1 bg-white text-black d-md-none"
               >
                 {' '}
-                {singleProductUser?.storeName?.lenght >= 10 ? `${singleProductUser?.storeName?.slice(0,10)}...` : singleProductUser?.storeName}
+                {singleProductUser?.storeName?.lenght >= 10
+                  ? `${singleProductUser?.storeName?.slice(0, 10)}...`
+                  : singleProductUser?.storeName}
               </strong>
             </Link>
           </div>

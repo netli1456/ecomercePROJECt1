@@ -28,7 +28,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { addWishList } from '../../redux/userSection/userSlice';
 import { addCartItems } from '../../redux/productSection/cartSlice';
 
-function Product(props) {
+function Product() {
   const params = useParams();
   const { id } = params;
   const [product, setProduct] = useState({});
@@ -37,7 +37,7 @@ function Product(props) {
   const dispatch = useDispatch();
   const [userProduct, setUserProducts] = useState([]);
   const { userInfo } = useSelector((state) => state.user);
-
+  let theProduct = null;
   const { cartItems } = useSelector((state) => state.cart);
 
   useEffect(() => {
@@ -59,7 +59,6 @@ function Product(props) {
     fetchSingleproduct();
   }, [id]);
 
-  console.log(cartItems);
 
   const handleAddProduct = async (productid) => {
     try {
@@ -67,8 +66,7 @@ function Product(props) {
         (item) => item?._id === productid
       );
       const quantity = existItem ? existItem?.quantity + 1 : 1;
-      const { data } = await axios.get(`${apiUrl}/api/products/${productid}`);
-      if (data?.countInStock < quantity) {
+      if (product?.countInStock < quantity) {
         return toast.error('Out of stock', {
           toastId: 'unique-toast-id',
           autoClose: 2000,
@@ -155,6 +153,7 @@ function Product(props) {
     (id) => id?._id === product?._id
   );
   const navigate = useNavigate();
+
   const handleBuy = () => {
     if (cartItems.find((id) => id === theProduct)) {
       navigate('/products/shipping');
@@ -163,7 +162,7 @@ function Product(props) {
     }
   };
 
-  let theProduct = null;
+  
 
   if (currentCartProductId?.length > 0) {
     theProduct = currentCartProductId[0];
@@ -221,6 +220,9 @@ function Product(props) {
     }
   };
 
+
+  console.log(product.userId)
+
   return (
     <div style={{ overflowX: 'hidden' }}>
       {loading ? (
@@ -249,7 +251,7 @@ function Product(props) {
           ></div>
           <div className="d-md-none" style={{ marginBottom: '83px' }}></div>
           <div>
-            <ProductHeader product={productId} />
+            <ProductHeader product={product.userId} />
           </div>
           <Row className="bgNavSize2 mb-5 ">
             <Col md={5}>

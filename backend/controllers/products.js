@@ -5,9 +5,26 @@ export const getProduct = async (req, res) => {
   try {
     const id = req.params.id;
     const product = await Products.findById(id);
-    res.status(200).json(product);
+
+    if (!product) {
+      return res.status(404).json({ message: 'Product not found' });
+    }
+    const seller = await Users.findById(product.userId.toString());
+    if (!seller) {
+      return res.status(404).json({ message: 'inactive account' });
+    }
+
+    const productDetails = {
+      ...product.toObject(),
+      storeName: seller.storeName,
+      storeImg: seller.storeImg,
+      storeCoverPhoto: seller.storeCoverPhoto,
+      followers: seller.followers.length,
+    };
+
+    res.status(200).json(productDetails);
   } catch (error) {
-    res.status(404).json({ error: error.message });
+    res.status(404).json({ message: error.message });
   }
 };
 export const addProduct = async (req, res) => {
