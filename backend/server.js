@@ -17,10 +17,9 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: 'https://aloservices-ji34.onrender.com', 
-    credentials: true, 
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    optionsSuccessStatus: 200, 
+    
   })
 );
 app.use(cookieParser());
@@ -45,12 +44,8 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-
-
 app.use('/api/seed', seedRouter);
-
 
 app.listen(process.env.PORT, () => {
   console.log('server connected');
-  
 });
