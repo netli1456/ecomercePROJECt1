@@ -221,10 +221,9 @@ function Product() {
   };
 
 
-  console.log(product.userId)
 
   return (
-    <div style={{ overflowX: 'hidden' }}>
+    <div style={{ overflowX: 'hidden', height:"100vh" }}>
       {loading ? (
         <div
           style={{ height: '20vh' }}
@@ -241,15 +240,13 @@ function Product() {
               width: '100vw',
               top: -10,
               zIndex: '999',
+              
             }}
           >
             <NaviBar />
           </div>
-          <div
-            className="d-none d-md-flex"
-            style={{ marginBottom: '100px' }}
-          ></div>
-          <div className="d-md-none" style={{ marginBottom: '83px' }}></div>
+          
+          <div style={{marginTop:"110px"}}>
           <div>
             <ProductHeader product={product.userId} />
           </div>
@@ -677,6 +674,7 @@ function Product() {
                 )}
             </ListGroup>
           )}
+          </div>
         </div>
       )}
       <footer>

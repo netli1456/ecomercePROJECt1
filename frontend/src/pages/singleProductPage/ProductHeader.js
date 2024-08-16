@@ -86,7 +86,7 @@ function ProductHeader(props) {
             <NaviBar />
           </div>
         )}
-        <div className="d-none d-md-flex" style={{ marginBottom: 'px' }}></div>
+       
       </div>
 
       <div
